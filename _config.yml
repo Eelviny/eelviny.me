@@ -5,26 +5,29 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jekyll-sitemap
+  - octopress-minify-html
+
 # Site settings
 title: Eelviny
-email: elvin@eelviny.me
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost" # the base hostname & protocol for your site
+name: "Elvin Luff"
+email: "[not set]"
+description: >
+  My name's Elvin Luff, but I go by the username Eelviny. I am many things: Web developer, student, outdoor persuits leader, charity worker, systems administrator, and a complete perfectionist. Welcome to my world.
+url: "https://eelviny.me"
 twitter_username: elvinluff
 github_username:  Eelviny
-
-# Build settings
-markdown: kramdown
+tracking_code: UA-38351552-4
+main_color: '#38b0de'
 
 sass:
     sass_dir: assets/styles
-#    style: compressed
+    style: compressed
 
 # File location
 
 source: ./source
 destination: ./static
+
+permalink: /blog/:year/:title/

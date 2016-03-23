@@ -1,11 +1,14 @@
----
-style: /assets/styles/stylesheet.css
----
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ page.style }}" />
+  <meta name="theme-color" content="{{ site.main_color }}">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="icon" type="image/png" href="/assets/images/icon64.png" />
+  <link rel="icon" type="image/png" href="/assets/images/icon256.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/icon128.png" />
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+  {% if jekyll.environment == 'production' %}
+    {% include google_analytics.html %}
+  {% endif %}
 </head>
