@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="row align-center">
+      <div class="small-12 columns">
+        <h1 class="text-center" style="padding-top:20px; padding-bottom:20px;">Blog</h1>
+      </div>
+      <div class="small-10 columns">
+      <h2>{{ page.title }}</h2>
+      {{ content }}
+      <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {{ site.name }}</p>
+      </div>
+    </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

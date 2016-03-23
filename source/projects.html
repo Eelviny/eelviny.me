@@ -1,0 +1,25 @@
+---
+layout: default
+title: 'Projects'
+permalink: '/projects/'
+---
+<div class="row columns">
+  <p style="padding-bottom: 50px">Here you'll find every past and present project that I've worked on. Some might no longer be running, but it allows you to take a look at the history of my work! My projects vary depending on my interests, so there should be something to amuse any like-minded person.</p>
+</div>
+<div class="row">
+  {% for item in site.data.project %}
+  <div class="small-12 large-6 columns">
+    {% if item.link %}
+    <a href="{{ item.link }}"><img id="{{ item.id }}" class="float-center" src="/assets/images/{{ item.image }}" /></a>
+    {% else %}
+    <img class="float-center" src="/assets/images/{{ item.image }}" />
+    {% endif %}
+    <h2>{{ item.name }} <small>{{ item.subtitle }}</small></h2>
+    <p class="text-justify">{{ item.description }}
+      {% if item.link %}
+      <a href="{{ item.link }}">Go take a look >></a>
+      {% endif %}
+    </p>
+  </div>
+  {% endfor %}
+</div>

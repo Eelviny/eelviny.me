@@ -1,0 +1,26 @@
+---
+layout: default
+title: 'Blog'
+permalink: '/blog/'
+---
+<div class="row">
+  <div class="small-12 columns">
+  {% for post in site.posts %}
+    <div class="media-object">
+      <div class="media-object-section show-for-medium">
+        <div class="thumbnail">
+          <a href="{{ post.url }}"><img src="/assets/images/icon256.png" style="width: 150px; height:150px;"></a>
+        </div>
+      </div>
+      <div class="media-object-section main-section">
+        <h4 class="subheader float-right">{{ post.date | date: "%-d %B %Y" }}</h4>
+        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more >></a></p>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+  <div class="small-12 columns">
+    <p><a href="/feed.xml"><i class="fa fa-rss fa-2x float-right"></i></a></p>
+  </div>
+</div>

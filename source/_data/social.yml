@@ -1,0 +1,84 @@
+- name: Email
+  username: '[not set]'
+  site: 
+  icon: fa-envelope-o
+
+- name: Github
+  username: Eelviny
+  site: https://github.com/Eelviny
+  icon: fa-github
+
+- name: Google+
+  username: Elvin Luff
+  site: https://plus.google.com/+ElvinLuffiny
+  icon: fa-google-plus
+
+- name: Last.fm
+  username: Eelviny
+  site: http://www.last.fm/user/Eelviny
+  icon: fa-lastfm
+
+- name: LinkedIn
+  username: Elvin Luff
+  site: https://www.linkedin.com/in/elvin-l-590136a0
+  icon: fa-linkedin
+
+- name: Pinterest
+  username: Eelviny
+  site: https://www.pinterest.com/eelviny
+  icon: fa-pinterest
+
+- name: Reddit
+  username: Eelviny
+  site: http://www.reddit.com/user/Eelviny/
+  icon: fa-reddit-alien
+  
+- name: Soundcloud
+  username: Eelviny
+  site: https://soundcloud.com/eelviny
+  icon: fa-soundcloud
+  
+- name: Steam
+  username: Eelviny
+  site: http://steamcommunity.com/id/eelviny/
+  icon: fa-steam
+  
+- name: Tumblr
+  username: Eelviny
+  site: https://www.tumblr.com/blog/eelviny
+  icon: fa-tumblr
+  
+- name: Twitter
+  username: elvinluff
+  site: https://twitter.com/elvinluff
+  icon: fa-twitter
+  
+- name: Youtube
+  username: Elvin Luff
+  site: https://www.youtube.com/channel/UCfPg_h5xrCiortxxkyFWemw
+  icon: fa-youtube-play
+  
+- name: Twitch
+  username: Eelviny
+  site: https://www.twitch.tv/eelviny/profile
+  icon: fa-twitch
+  
+- name: Wikipedia
+  username: Eelviny
+  site: https://en.wikipedia.org/wiki/User:Eelviny
+  icon: fa-wikipedia-w
+  
+- name: Wordpress
+  username: Eelviny
+  site: https://en.gravatar.com/eelviny
+  icon: fa-wordpress
+  
+- name: PayPal
+  username: Eelviny
+  site: https://www.paypal.me/eelviny
+  icon: fa-paypal
+  
+- name: Skype
+  username: Eelviny
+  site: 'https://www.skype.com/'
+  icon: fa-skype

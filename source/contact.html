@@ -1,0 +1,18 @@
+---
+layout: default
+title: 'Contact'
+permalink: '/contact/'
+---
+
+<div class="row">
+  <div class="small-12 columns" style="padding-bottom:40px">
+    <p>Below, you'll find a list of just about every place you can find me. Feel free to take a gander - if you can't get into contact one way, there's always a backup! From my game library to my music tastes; you'll find it all here.</p>
+  </div>
+  {% for item in site.data.social %}
+  <div class="small-6 medium-4 large-3 columns text-center" style="padding-bottom:30px">
+    <i class="fa {{ item.icon }} fa-4x"></i>
+    <a href="{{ item.link }}" target="_blank"><h3>{{ item.name }}</h3></a>
+    <p>{{ item.username }}</p>
+  </div>
+  {% endfor %}
+</div>

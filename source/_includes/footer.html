@@ -1,0 +1,18 @@
+<div id="footer">
+  <div class="row">
+    <div class="small-12 medium-4 columns">
+      <p>Last updated: {{ site.time | date: '%d/%m/%Y %H:%M %Z'}}</p>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <p class="text-center">
+        <a href="/" title="Home"><span class="secondary badge"><i class="fa fa-home"></i></span></a> 
+        <a href="/blog" title="Blog"><span class="secondary badge"><i class="fa fa-rss"></i></span></a> 
+        <a href="/projects" title="Projects"><span class="secondary badge"><i class="fa fa-archive"></i></span></a> 
+        <a href="/contact" title="Contact"><span class="secondary badge"><i class="fa fa-envelope"></i></span></a> 
+        <a href="#" title="Go to top"><span class="secondary badge"><i class="fa fa-arrow-up"></i></span></a>
+      </p>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <p class="text-right">&#169; {{ site.time | date: '%Y' }} <strong>{{ site.name }}</strong>.</p>
+  </div>
+</div>

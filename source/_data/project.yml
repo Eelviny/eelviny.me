@@ -1,0 +1,22 @@
+- id: nxt-python
+  name: NXT-Python
+  subtitle: A new brain
+  image: nxt-python.svg
+  link: https://github.com/Eelviny/nxt-python
+  description: >
+    I've owned a Mindstorms NXT kit for a long time, and it surprised me how well it is has held up over the years. The limiting factor these days has to be the processing power of the brain of the unit, and this is where NXT-Python comes in. Using the communications protocol of the NXT brick, the computer becomes the 'brain' of the NXT, taking measurements from the sensors and relaying information back on how to move the motors. The bit in the middle is up to you - your limit is the power of your computer!
+
+- id: fsmu
+  name: FSMU
+  subtitle: Ugandan charity
+  image: fsmu.jpg
+  link: http://fsmu.co.uk
+  description: >
+    When I approached a charity and asked them to let me loose on their website, I'm surprised they said yes. But in an internet-centric world, even a charity needs to keep up with the times, and the result is their brand new website. Built on Foundation and run on Wordpress, this website allows for easy management by those less technically-minded, and is image-centric, right from the front page. I'm a member of the charity myself, you'll find the projects I run on this website too.
+
+- id: justgame
+  name: JustGame
+  subtitle: The first of many
+  image: justgame.png
+  description: >
+    Those were the days. The idea was to provide a set of simple game servers, focused simply on enhancing the game so as to make a massively multiplayer environment feasible. The first iteration, JustSurvival, focused on bringing this to Minecraft. JustGame focused on taking this idea and tying multiple indie games together into a massive community, 2000 members strong. Not all good things last forever - I started this business in 2013, then shut it down in 2015 to focus on education.
