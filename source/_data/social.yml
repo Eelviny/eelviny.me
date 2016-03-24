@@ -1,6 +1,6 @@
 - name: Email
-  username: '[not set]'
-  site: 
+  username: elvinluff<span style="display:none">123</span>@gmail.com
+  site: ''
   icon: fa-envelope-o
 
 - name: Github
@@ -20,7 +20,7 @@
 
 - name: LinkedIn
   username: Elvin Luff
-  site: https://www.linkedin.com/in/elvin-l-590136a0
+  site: https://www.linkedin.com/in/elvinluff
   icon: fa-linkedin
 
 - name: Pinterest
