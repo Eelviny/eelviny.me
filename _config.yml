@@ -19,7 +19,7 @@ url: "https://eelviny.me"
 twitter_username: elvinluff
 github_username:  Eelviny
 tracking_code: UA-38351552-4
-main_color: '#38b0de'
+main_colour: '#38b0de'
 
 sass:
     sass_dir: assets/styles
