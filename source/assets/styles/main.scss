@@ -13,7 +13,7 @@
 //@include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
-//@include foundation-close-button;
+@include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
 //@include foundation-drilldown-menu;
@@ -60,7 +60,7 @@ $maincolour: {{ site.main_colour }};
     color: $white;
     }
   a:hover {
-    color: $dark-gray;
+    color: $medium-gray;
     }
   }
   
@@ -68,6 +68,7 @@ $maincolour: {{ site.main_colour }};
   background-color: #fafafa;
   padding-top: 3rem;
   padding-bottom: 2rem;
+  margin-top: 6rem;
   color: $dark-gray;
   }
   
@@ -81,4 +82,5 @@ $maincolour: {{ site.main_colour }};
     padding-top: 10rem;
     padding-bottom: 12rem;
     }
+  margin-bottom: 6rem;
   }
