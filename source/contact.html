@@ -11,7 +11,7 @@ permalink: '/contact/'
   {% for item in site.data.social %}
   <div class="small-6 medium-4 large-3 columns text-center" style="padding-bottom:30px">
     <i class="fa {{ item.icon }} fa-4x"></i>
-    <a href="{{ item.link }}" target="_blank"><h3>{{ item.name }}</h3></a>
+    <h3><a href="{{ item.site }}" target="_blank">{{ item.name }}</a></h3>
     <p>{{ item.username }}</p>
   </div>
   {% endfor %}
