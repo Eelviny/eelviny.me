@@ -9,25 +9,22 @@ gems:
   - jekyll-sitemap
   - octopress-minify-html
 
-# Site settings
+# Site info
 title: Eelviny
-name: "Elvin Luff"
-email: "[not set]"
+name: 'Elvin Luff'
+email: 'elvinluff@gmail.com'
 description: >
-  My name's Elvin Luff, but I go by the username Eelviny. I am many things: Web developer, student, outdoor persuits leader, charity worker, systems administrator, and a complete perfectionist. Welcome to my world.
-url: "https://eelviny.me"
-twitter_username: elvinluff
-github_username:  Eelviny
+  My name's Elvin Luff, but I go by the username Eelviny. I am many things: systems administrator, web developer, world traveller, charity worker, student and a complete perfectionist. Welcome to my world.
+url: 'https://eelviny.me'
 tracking_code: UA-38351552-4
 main_colour: '#38b0de'
 
-sass:
-    sass_dir: assets/styles
-    style: compressed
-
 # File location
-
 source: ./source
 destination: ./static
 
+# Site generation
 permalink: /blog/:year/:title/
+sass:
+  sass_dir: assets/styles
+  style: compressed
