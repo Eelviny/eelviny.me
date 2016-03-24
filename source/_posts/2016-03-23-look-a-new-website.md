@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Look! A new website'
+thumbnail: csscode.png
 ---
 
 Time to get out of the free, but restricting grasp of Tumblr. It's a great service - don't get me wrong, but the style of blogging makes it feel more like your average social network with a few more advanced features bolted on.
@@ -16,6 +17,6 @@ My two criteria for this website were that I wanted it to be fast, and I wanted 
 It took a bit of a getting used to - coming from a background of full-blown CMS implementations, not being given a control panel was a bit of a change! Time to crack the knuckles, roll up the sleeves, cue the music and get programming instead. I quickly found that the underlying programming language, Ruby, is a joy to use and I've not gone back from it since.
 
 ### How's it running?
-Actually, this is something I would love to cover in detail in a future post. But for now, I'll tell you this: Amazon AWS is simply perfect for low-traffic websites such as this one, and a combination of the right tools from AWS will get anything done. I use Amazon S3 to hold all the static files, which is then passed to Cloudfront which distributes the files and deals with the SSL certificate. Finally, I topped it off with Route 53, simply because I'm dissatisfied with NameCheap's DNS configuration service. All this and I'm spending about 50p per month right now - The "pay for what you use" model means it could increase in the future.
+Actually, this is something I would love to cover in detail in a future post. But for now, I'll tell you this: [Amazon AWS](https://aws.amazon.com) is simply perfect for low-traffic websites such as this one, and a combination of the right tools from AWS will get anything done. I use Amazon S3 to hold all the static files, which is then passed to Cloudfront which distributes the files and deals with the SSL certificate. Finally, I topped it off with Route 53, simply because I'm dissatisfied with NameCheap's DNS configuration service. All this and I'm spending about 50p per month right now - The "pay for what you use" model means it could increase in the future.
 
 Anyway, I hope you like it! It's taken way too much time that I could have used doing more useful things, such as coursework. But it's been fun to do.

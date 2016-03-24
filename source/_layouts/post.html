@@ -8,7 +8,14 @@
         <h1 class="text-center" style="padding-top:20px; padding-bottom:20px;">Blog</h1>
       </div>
       <div class="small-10 columns">
-      <h2>{{ page.title }}</h2>
+      <h2>{% if page.thumbnail %}
+        <div class="thumbnail">
+          <a href="/assets/images/{{ page.thumbnail }}">
+            <img src="/assets/images/{{ page.thumbnail }}" style="width:35px; height:35px" />
+          </a>
+        </div>{% endif %}
+        {{ page.title }}
+      </h2>
       {{ content }}
       <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {{ site.name }}</p>
       </div>
