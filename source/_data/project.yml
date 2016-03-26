@@ -1,18 +1,26 @@
 - id: nxt-python
   name: NXT-Python
-  subtitle: A new brain
+  subtitle: A new brain for an old toy
   image: nxt-python.svg
   link: https://github.com/Eelviny/nxt-python
   description: >
     I've owned a Mindstorms NXT kit for a long time, and it surprised me how well it is has held up over the years. The limiting factor these days has to be the processing power of the brain of the unit, and this is where NXT-Python comes in. Using the communications protocol of the NXT brick, the computer becomes the 'brain' of the NXT, taking measurements from the sensors and relaying information back on how to move the motors. The bit in the middle is up to you - your limit is the power of your computer!
 
 - id: fsmu
-  name: FSMU
+  name: Friends of St Michael's Uganda
   subtitle: Ugandan charity
   image: fsmu.jpg
   link: http://fsmu.co.uk
   description: >
     When I approached a charity and asked them to let me loose on their website, I'm surprised they said yes. But in an internet-centric world, even a charity needs to keep up with the times, and the result is their brand new website. Built on Foundation and run on Wordpress, this website allows for easy management by those less technically-minded, and is image-centric, right from the front page. I'm a member of the charity myself, you'll find the projects I run on this website too.
+    
+- id: boysdormproject
+  name: "The Boys' Dorm Project"
+  subtitle: Out into the world
+  image: boysdormproject.svg
+  link: http://fsmu.co.uk/projects/boys-dormitories/
+  description: >
+    This one's more of a team effort. Currently, a group of friends and I are fundraising together to build a dormitory inside a Ugandan school. This is closely linked to my FSMU website work - it's the same charity! What makes this different is that we're building a boys dormitory in a girls school. While this may sound a buit counter-productive, we feel it's necessary; there are some boys at the school, if not many. This is because some are children of the teachers who also live within the school grounds, or orphans that overflowing orphanages can't provide for.
 
 - id: justgame
   name: JustGame
