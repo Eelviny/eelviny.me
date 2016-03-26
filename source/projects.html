@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 'Projects'
 permalink: '/projects/'
 ---
@@ -14,10 +14,11 @@ permalink: '/projects/'
     {% else %}
     <img class="float-center" src="/assets/images/{{ item.image }}" />
     {% endif %}
-    <h2>{{ item.name }} <small>{{ item.subtitle }}</small></h2>
+    <h2>{{ item.name }}</h2>
+    <h3 class="subheader">{{ item.subtitle }}</h3>
     <p class="text-justify">{{ item.description }}
       {% if item.link %}
-      <a href="{{ item.link }}">Go take a look >></a>
+      <a href="{{ item.link }}">Go take a look <i class="fa fa-arrow-right"></i></a>
       {% endif %}
     </p>
   </div>

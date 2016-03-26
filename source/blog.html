@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 'Blog'
 permalink: '/blog/'
 ---
@@ -15,7 +15,7 @@ permalink: '/blog/'
       <div class="media-object-section main-section">
         <h4 class="subheader float-right">{{ post.date | date: "%-d %B %Y" }}</h4>
         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-        <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more >></a></p>
+        <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more <i class="fa fa-arrow-right"></i></a></p>
       </div>
     </div>
   {% endfor %}

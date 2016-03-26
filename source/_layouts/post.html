@@ -1,36 +1,30 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  {% include head.html %}
-  <body>
+---
+layout: default
+---
+{% if page.thumbnail %}
+<div class="tiny reveal" id="thumbnailmodal" data-reveal>
+  <img src="/assets/images/{{ page.thumbnail }}" class="float-center"/>
+  <button class="close-button" data-close aria-label="Close picture" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endif %}
+<div class="row align-center">
+  <div class="small-12 columns">
+    <h1 class="text-center" style="padding-top:20px; padding-bottom:20px;">Blog</h1>
+  </div>
+  <div class="small-10 columns">
+  <h2>
     {% if page.thumbnail %}
-    <div class="tiny reveal" id="thumbnailmodal" data-reveal>
-      <img src="/assets/images/{{ page.thumbnail }}" class="float-center"/>
-      <button class="close-button" data-close aria-label="Close picture" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="thumbnail">
+      <a data-open="thumbnailmodal">
+        <img src="/assets/images/{{ page.thumbnail }}" style="width:35px; height:35px" />
+      </a>
     </div>
     {% endif %}
-    {% include header.html %}
-    <div class="row align-center">
-      <div class="small-12 columns">
-        <h1 class="text-center" style="padding-top:20px; padding-bottom:20px;">Blog</h1>
-      </div>
-      <div class="small-10 columns">
-      <h2>
-        {% if page.thumbnail %}
-        <div class="thumbnail">
-          <a data-open="thumbnailmodal">
-            <img src="/assets/images/{{ page.thumbnail }}" style="width:35px; height:35px" />
-          </a>
-        </div>
-        {% endif %}
-        {{ page.title }}
-      </h2>
-      {{ content }}
-      <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {{ site.name }}</p>
-      </div>
-    </div>
-    {% include footer.html %}
-    {% include scripts.html %}
-  </body>
-</html>
+    {{ page.title }}
+  </h2>
+  {{ content }}
+  <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {{ site.name }}</p>
+  </div>
+</div>
