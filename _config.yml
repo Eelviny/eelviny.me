@@ -17,7 +17,8 @@ description: >
   My name's Elvin Luff, but I go by the username Eelviny. I am many things: systems administrator, web developer, world traveller, charity worker, student and a complete perfectionist. Welcome to my world.
 url: 'https://eelviny.me'
 tracking_code: UA-38351552-4
-main_colour: '#38b0de'
+main_color: '#38b0de'
+foundation_version: '6.2.0'
 
 # File location
 source: ./source
