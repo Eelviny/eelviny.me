@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="600.25" width="800.92" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800.92087 600.24999" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <defs>
 <linearGradient id="b" y2="137.27" gradientUnits="userSpaceOnUse" x2="112.03" gradientTransform="matrix(.56254 0 0 .56797 342.29 378.75)" y1="192.35" x1="150.96">
@@ -11,15 +10,6 @@
 <stop stop-color="#306998" offset="1"/>
 </linearGradient>
 </defs>
-<metadata>
-<rdf:RDF>
-<cc:Work rdf:about="">
-<dc:format>image/svg+xml</dc:format>
-<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-<dc:title/>
-</cc:Work>
-</rdf:RDF>
-</metadata>
 <g transform="translate(-2981.8 538.6)">
 <g transform="matrix(4.742 0 0 4.742 -12321 1234.5)">
 <rect rx="2.1088" ry="2.1088" height="84.352" width="84.352" y="-363.32" x="3269.3" fill="#ffa500"/>
