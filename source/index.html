@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 permalink: '/'
 ---
 <div id="homepage">
@@ -35,5 +35,24 @@ permalink: '/'
         <div class="stat">18</div>
       </div>
     </div>
+  </div>
+</div>
+<div class="row vertical-pad">
+  <div class="small-12 columns">
+  <h3 class="text-center">Latest Post</h3>
+  {% for post in site.posts limit:1 %}
+    <div class="media-object">
+      <div class="media-object-section show-for-medium">
+        <div class="thumbnail">
+          <a href="{{ post.url }}"><img src="/assets/images/{%if post.thumbnail %}{{ post.thumbnail }}{% else %}icon256.png{% endif %}" style="width: 150px; height:150px;"></a>
+        </div>
+      </div>
+      <div class="media-object-section main-section">
+        <h4 class="subheader float-right">{{ post.date | date: "%-d %B %Y" }}</h4>
+        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  {% endfor %}
   </div>
 </div>

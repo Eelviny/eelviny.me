@@ -43,10 +43,15 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-$maincolour: {{ site.main_colour }};
+$maincolor: {{ site.main_color }};
+
+.vertical-pad {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  }
 
 .bar-background {
-  background-color: $maincolour;
+  background-color: $maincolor;
   }
   
 .white {
@@ -66,8 +71,7 @@ $maincolour: {{ site.main_colour }};
   
 #footer {
   background-color: #fafafa;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  @extend .vertical-pad;
   margin-top: 6rem;
   color: $dark-gray;
   }
