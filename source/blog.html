@@ -3,8 +3,7 @@ layout: page
 title: 'Blog'
 permalink: '/blog/'
 ---
-<div class="row">
-  <div class="small-12 columns">
+<div class="row columns">
   {% for post in site.posts %}
     <div class="media-object">
       <div class="media-object-section show-for-medium">
@@ -19,8 +18,4 @@ permalink: '/blog/'
       </div>
     </div>
   {% endfor %}
-  </div>
-  <div class="small-12 columns">
-    <p><a href="/feed.xml"><i class="fa fa-rss fa-2x float-right"></i></a></p>
-  </div>
 </div>

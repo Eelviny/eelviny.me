@@ -44,21 +44,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 $maincolor: {{ site.main_color }};
-
-.vertical-pad {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  }
-
-.bar-background {
-  background-color: $maincolor;
-  }
   
 .white {
   color: $white
   }  
 
-.menu-bar {
+#menu-bar {
+  background-color: $maincolor;
   padding-top: 1rem;
   padding-bottom: 1rem;
   a {
@@ -71,13 +63,14 @@ $maincolor: {{ site.main_color }};
   
 #footer {
   background-color: #fafafa;
-  @extend .vertical-pad;
-  margin-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
   color: $dark-gray;
   }
   
 #homepage {
-  @extend .bar-background;
+  background-color: $maincolor;
   @include breakpoint(small only) {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -87,4 +80,8 @@ $maincolor: {{ site.main_color }};
     padding-bottom: 12rem;
     }
   margin-bottom: 6rem;
+  }
+  
+#latestpost {
+  margin-top: 6rem;
   }
