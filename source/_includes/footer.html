@@ -5,10 +5,9 @@
     </div>
     <div class="small-12 medium-4 columns">
       <p class="text-center">
-        <a href="/" title="Home"><span class="secondary badge"><i class="fa fa-home"></i></span></a> 
-        <a href="/blog" title="Blog"><span class="secondary badge"><i class="fa fa-rss"></i></span></a> 
-        <a href="/projects" title="Projects"><span class="secondary badge"><i class="fa fa-archive"></i></span></a> 
-        <a href="/contact" title="Contact"><span class="secondary badge"><i class="fa fa-envelope"></i></span></a> 
+        {% for nav in site.data.nav %}
+        <a href="{{ nav.url }}" title="{{ nav.section }}"><span class="secondary badge"><i class="fa {{ nav.icon }}"></i></span></a>
+        {% endfor %}
         <a href="#" title="Go to top"><span class="secondary badge"><i class="fa fa-arrow-up"></i></span></a>
       </p>
     </div>

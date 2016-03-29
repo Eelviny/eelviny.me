@@ -38,14 +38,19 @@ permalink: '/'
     </div>
   </div>
 </div>
-<div class="row" id="latestpost">
+<div class="row align-right" id="latestpost">
+  <div class="small-12 medium-4 columns">
+    <h3 class="text-center">Latest Post</h3>
+  </div>
+  <div class="small-12 medium-4 columns">
+    <a href="/blog/" title="Blog" class="small button float-right">See all blog posts <i class="fa fa-arrow-circle-right"></i></a>
+  </div>
   <div class="small-12 columns">
-  <h3 class="text-center">Latest Post</h3>
   {% for post in site.posts limit:1 %}
     <div class="media-object">
       <div class="media-object-section show-for-medium">
         <div class="thumbnail">
-          <a href="{{ post.url }}"><img src="/assets/images/{%if post.thumbnail %}{{ post.thumbnail }}{% else %}icon256.png{% endif %}" style="width: 150px; height:150px;"></a>
+          <a href="{{ post.url }}"><img src="/assets/images/{%if post.image %}{{ post.image }}{% else %}icon256.png{% endif %}" style="width: 150px; height:150px;"></a>
         </div>
       </div>
       <div class="media-object-section main-section">

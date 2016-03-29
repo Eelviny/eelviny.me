@@ -1,0 +1,15 @@
+- section: 'Home'
+  url: '/'
+  icon: 'fa-home'
+  
+- section: 'Blog'
+  url: '/blog/'
+  icon: 'fa-rss'
+  
+- section: 'Projects'
+  url: '/projects/'
+  icon: 'fa-archive'
+  
+- section: 'Contact'
+  url: '/contact/'
+  icon: 'fa-envelope'

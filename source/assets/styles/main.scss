@@ -56,6 +56,9 @@ $maincolor: {{ site.main_color }};
   a {
     color: $white;
     }
+  .currentpage {
+    font-weight: bold;
+    }
   a:hover {
     color: $medium-gray;
     }
