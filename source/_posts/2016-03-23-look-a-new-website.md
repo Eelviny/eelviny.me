@@ -2,7 +2,7 @@
 layout: post
 title: 'Look! A new website'
 section: 'Blog'
-thumbnail: 'csscode.png'
+image: 'csscode.png'
 ---
 
 Time to get out of the free, but restricting grasp of Tumblr. It's a great service - don't get me wrong, but the style of blogging makes it feel more like your average social network with a few more advanced features bolted on.

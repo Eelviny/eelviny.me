@@ -12,16 +12,16 @@ layout: page
 <div class="row align-center">
   <div class="small-10 columns">
   <h2>
-    {% if page.thumbnail %}
+    {% if page.image %}
     <div class="thumbnail">
       <a data-open="thumbnailmodal">
-        <img src="/assets/images/{{ page.thumbnail }}" style="width:35px; height:35px" />
+        <img src="/assets/images/{{ page.image }}" style="width:35px; height:35px" />
       </a>
     </div>
     {% endif %}
     &nbsp;{{ page.title }}
   </h2>
   {{ content }}
-  <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</p>
+  <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}</p>
   </div>
 </div>
