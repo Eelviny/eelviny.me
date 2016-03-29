@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 {% if page.thumbnail %}
 <div class="tiny reveal" id="thumbnailmodal" data-reveal>
@@ -10,9 +10,6 @@ layout: default
 </div>
 {% endif %}
 <div class="row align-center">
-  <div class="small-12 columns">
-    <h1 class="text-center" style="padding-top:20px; padding-bottom:20px;">Blog</h1>
-  </div>
   <div class="small-10 columns">
   <h2>
     {% if page.thumbnail %}
@@ -22,9 +19,9 @@ layout: default
       </a>
     </div>
     {% endif %}
-    {{ page.title }}
+    &nbsp;{{ page.title }}
   </h2>
   {{ content }}
-  <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {{ site.name }}</p>
+  <p class="subheader text-right">Published on {{ page.date | date: "%A %-d %B %Y" }} by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</p>
   </div>
 </div>

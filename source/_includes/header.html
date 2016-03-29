@@ -5,10 +5,10 @@
     </div>
     <div class="small-12 medium-8 columns">
       <ul class="menu align-right show-for-medium">
-        <li><a href="/" title="Home"><i class="fa fa-home"></i> <span>Home</span></a></li>
-        <li><a href="/blog" title="Blog"><i class="fa fa-rss"></i> <span>Blog</span></a></li>
-        <li><a href="/projects" title="Projects"><i class="fa fa-archive"></i> <span>Projects</span></a></li>
-        <li><a href="/contact" title="Contact"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="/" title="Home"><i class="fa fa-home"></i> <span>{% if page.section == "Home" %}<strong>Home</strong>{% else %}Home{% endif %}</span></a></li>
+        <li><a href="/blog" title="Blog"><i class="fa fa-rss"></i> <span>{% if page.section == "Blog" or site.post %}<strong>Blog</strong>{% else %}Blog{% endif %}</span></a></li>
+        <li><a href="/projects" title="Projects"><i class="fa fa-archive"></i> <span>{% if page.section == "Projects" %}<strong>Projects</strong>{% else %}Projects{% endif %}</span></a></li>
+        <li><a href="/contact" title="Contact"><i class="fa fa-envelope"></i> <span>{% if page.section == "Contact" %}<strong>Contact</strong>{% else %}Contact{% endif %}</span></a></li>
       </ul>
       <ul class="menu align-center show-for-small-only">
         <li><a href="/" title="Home"><i class="fa fa-lg fa-fw fa-home"></i></a></li>
