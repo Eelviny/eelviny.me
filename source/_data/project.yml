@@ -21,6 +21,14 @@
   link: http://fsmu.co.uk/projects/boys-dormitories/
   description: >
     This one's more of a team effort. Currently, a group of friends and I are fundraising together to build a dormitory inside a Ugandan school. This is closely linked to my FSMU website work - it's the same charity! What makes this different is that we're building a boys dormitory in a girls school. While this may sound a buit counter-productive, we feel it's necessary; there are some boys at the school, if not many. This is because some are children of the teachers who also live within the school grounds, or orphans that overflowing orphanages can't provide for.
+    
+- id: oldeelviny
+  name: "Old Eelviny"
+  subtitle: "Obsoleted but still alive"
+  image: "oldeelviny.jpg"
+  link: 'https://eelviny.tumblr.com'
+  description: >
+    The website you're currently on is version 2, but that doesn't mean my first working version isn't still up for show! It uses a variety of different techniques compared to this site, with a very different aim - the site came about from the capabilities of Tumblr. At the time the convenience and price (free!) of Tumblr made it very easy to build a whole website from scratch, letting Tumblr do the heavy lifting in terms of content and serving the pages.
 
 - id: justgame
   name: JustGame
