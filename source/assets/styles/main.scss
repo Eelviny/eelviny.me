@@ -26,7 +26,7 @@
 @include foundation-orbit;
 @include foundation-pagination;
 //@include foundation-progress-bar;
-@include foundation-slider;
+//@include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
 //@include foundation-switch;
@@ -40,8 +40,8 @@
 @include foundation-float-classes;
 @include foundation-flex-classes;
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+//@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 $maincolor: {{ site.main_color }};
   
