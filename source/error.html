@@ -9,22 +9,22 @@ section: 'Error'
     <h2 class="text-center">404 - Page not found</h2>
     <p class="text-center">This page doesn't exist! Perhaps you can find what you're looking for below.</p>
   </div>
-  <div class="small-12 columns" style="padding-top: 50px">
-  <h3 class="text-center">Latest Posts</h3>
-    {% for post in site.posts limit:3 %}
-    <div class="media-object">
-      <div class="media-object-section show-for-medium">
-        <div class="thumbnail">
-          <a href="{{ post.url }}"><img src="/assets/images/{%if post.image %}{{ post.image }}{% else %}icon256.png{% endif %}" style="width: 150px; height:150px;"></a>
-        </div>
-      </div>
-      <div class="media-object-section main-section">
-        <h4 class="subheader float-right">{{ post.date | date: "%-d %B %Y" }}</h4>
-        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-        <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more <i class="fa fa-arrow-right"></i></a></p>
-      </div>
-    </div>
-  {% endfor %}
+  <div class="small-12 columns" style="padding-top: 4rem">
+    <h2 class="text-center">Latest Posts</h2>
   </div>
+  {% for post in site.posts limit:3 %}
+  <div class="small-12 columns">
+    <h4 class="subheader float-right">{{ post.date | date: "%-d %B %Y" }}</h4>
+    <h3>
+      <a href="{{ post.url }}">
+        <div class="thumbnail show-for-medium">
+          <img src="/assets/images/{%if post.image %}{{ post.image }}{% else %}icon64.png{% endif %}" style="width: 35px; height:35px;">
+        </div>
+        {{ post.title }}
+      </a>
+    </h3>
+    <p class="text-justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a href="{{ post.url }}">Read more <i class="fa fa-arrow-right"></i></a></p>
+  </div>
+  {% endfor %}
 </div>
 
