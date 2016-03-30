@@ -3,7 +3,8 @@ layout: page
 section: 'Blog'
 permalink: '/blog/'
 ---
-<div class="row columns">
+<div class="row">
+  <div class="small-12 columns">
   {% for post in site.posts %}
     <div class="media-object">
       <div class="media-object-section show-for-medium">
@@ -18,4 +19,5 @@ permalink: '/blog/'
       </div>
     </div>
   {% endfor %}
+  </div>
 </div>
