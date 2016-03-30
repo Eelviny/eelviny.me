@@ -1,6 +1,7 @@
 ---
-id: justgame
-image: justgame.jpg
+image: 
+  url: '/assets/images/justgame.jpg'
+  alt: 'JustGame logos'
 ---
 
 ## JustGame

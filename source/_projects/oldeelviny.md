@@ -1,5 +1,7 @@
 ---
-image: 'oldeelviny.jpg'
+image: 
+  url: '/assets/images/oldeelviny.jpg'
+  alt: 'Old website screenshot'
 link: 'https://eelviny.tumblr.com'
 ---
 

@@ -3,7 +3,7 @@ layout: page
 ---
 {% if page.image %}
 <div class="tiny reveal" id="thumbnailmodal" data-reveal>
-  <img src="/assets/images/{{ page.image }}" class="float-center"/>
+  <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" class="float-center"/>
   <button class="close-button" data-close aria-label="Close picture" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -15,7 +15,7 @@ layout: page
     {% if page.image %}
     <div class="thumbnail">
       <a data-open="thumbnailmodal">
-        <img src="/assets/images/{{ page.image }}" style="width:35px; height:35px" />
+        <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" style="width:35px; height:35px" />
       </a>
     </div>
     {% endif %}

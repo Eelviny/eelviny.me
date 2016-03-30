@@ -10,9 +10,9 @@ permalink: '/projects/'
   {% for project in site.projects %}
   <div id="{{ project.title | slugify }}" class="small-12 large-6 columns text-justify">
     {% if project.link %}
-    <a href="{{ project.link }}"><img class="float-center" src="/assets/images/{{ project.image }}" /></a>
+    <a href="{{ project.link }}"><img class="float-center" src="{{ project.image.url }}" alt="{{ project.image.alt }}" /></a>
     {% else %}
-    <img class="float-center" src="/assets/images/{{ project.image }}" />
+    <img class="float-center" src="{{ project.image.url }}" alt="{{ project.image.alt }}" />
     {% endif %}
     {{ project.content }}
     {% if project.link %}

@@ -1,6 +1,8 @@
 ---
-image: fsmu.jpg
-link: http://fsmu.co.uk
+image: 
+  url: '/assets/images/fsmu.jpg'
+  alt: 'FSMU website screenshot'
+link: 'http://fsmu.co.uk'
 ---
 ## Friends of St Michaels Uganda
 

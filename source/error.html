@@ -18,7 +18,7 @@ section: 'Error'
     <h3>
       <a href="{{ post.url }}">
         <div class="thumbnail show-for-medium">
-          <img src="/assets/images/{%if post.image %}{{ post.image }}{% else %}icon64.png{% endif %}" style="width: 35px; height:35px;">
+          <img {%if post.image %}src="{{ post.image.url }}" alt="{{ post.image.alt }}"{% else %}src="/assets/images/icon64.png" alt="Site logo"{% endif %} style="width: 35px; height:35px;">
         </div>
         {{ post.title }}
       </a>
