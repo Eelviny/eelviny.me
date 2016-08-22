@@ -18,7 +18,7 @@ Backstory over. Let's launch straight into the solution I've devised. It's taken
 
 For this method, I've resorted to heavy use of virtual machines to achieve this task. Being able to fire up a VirtualBox VM makes testing of this system dead simple, and I have snapshots to rollback to if things don't go well. I'm not going to explain virtual machines; that's another topic for another time. What's important is to have the Ubuntu-based operating system installed, with **no updates**. This is very important! By having no installed updates, we can then work out which packages need to be upgraded to reach the newest version.
 
-For this guide, I'm using Lubuntu 14.04. *Note: Ubuntu releases updated images such as 14.04.3 so make sure you're getting the oldest (14.04)!* You'll want it to be connected to the internet - this system works by using the VM to download the updates, and then having them applied to the actual machine.
+For this guide, I'm using Lubuntu 16.04. *Note: Ubuntu releases updated images so make sure you're getting the oldest!* You'll want it to be connected to the internet - this system works by using the VM to download the updates, and then having them applied to the actual machine.
 
 ![Synaptic Package Manager](/assets/images/synaptic.jpg){:.float-center}
 Once I got into the operating system, I started by launching Synaptic Package Manager. We're not going to be using it the usual way, so pay close attention:
@@ -70,30 +70,27 @@ If there's anything you can take from this guide, it's that Ubuntu or any other 
 
 ### For the lazy
 
-For those who like automation (Like myself!), here's a script that I use to automatically update laptops. You'll need to do things manually to create the repository, but this allows me to plug in a USB stick, hit go, wait for the repository to copy and then move on to the next laptop. Quick and easy updating! *Must be run as root.*
+For those who like automation (Like myself!), here's a script that I use to automatically update laptops. You'll need to do things manually to create the repository, but this allows me to plug in a USB stick, hit go, let it update and move on to the next laptop. Quick and easy updating! *Must be run as root.*
 
-```
+``` sh
 #!/bin/sh
-
-cp -rvf offline /root/
-echo "USB may now be removed"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Create new sources list"
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
-echo "deb file:/root/offline /" > /etc/apt/sources.list
+echo "deb file:$DIR /" > /etc/apt/sources.list
 
 echo "Start the update process"
-apt-get update
-apt-get dist-upgrade --allow-unauthenticated -y
-apt-get autoremove -y
+apt update
+apt dist-upgrade --allow-unauthenticated -y
+apt autoremove -y
 
 echo "Remove temporary sources"
 mv /etc/apt/sources.list.bak /etc/apt/sources.list
-rm -rf /root/offline
 
-echo "done"
-reboot
+echo "Done"
+#reboot
 ```
 
-*[PCI]: Peripheral Component Interconnect
-*[PC]: Personal Computer
+*[VM]: Virtual Machine
+*[USB]: Universal Serial Bus
