@@ -1,9 +1,10 @@
 ---
-image: 
-  url: '/assets/images/nxt-python.svg'
-  alt: 'NXT-Python logo'
-link: 'https://github.com/Eelviny/nxt-python'
+image:
+  url: "/assets/images/nxt-python.svg"
+  alt: NXT-Python logo
+link: https://github.com/Eelviny/nxt-python
 ---
+
 ## NXT-Python
 
 ### A new brain for an old toy

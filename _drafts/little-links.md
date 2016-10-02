@@ -1,6 +1,9 @@
 ---
-layout: post
 title: Little Links
+date: 2015-06-27 00:00:00 Z
+categories:
+- source
+layout: post
 ---
 
 There are so many little links to everything in life. Indeed, many religions show us how everything holds a connection, a sense of harmony. But that is not what I’m here to write about. These links are in a more tangible sense; people. There are brothers, sisters, friends, best friends, uncles, aunts… The list goes on. Boyfriends, girlfriends, fathers… mothers.

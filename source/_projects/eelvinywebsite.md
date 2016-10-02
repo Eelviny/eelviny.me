@@ -1,8 +1,8 @@
 ---
-image: 
-  url: '/assets/images/eelvinywebsite.jpg'
-  alt: 'Website screenshot'
-link: 'https://github.com/Eelviny/eelviny.me'
+image:
+  url: "/assets/images/eelvinywebsite.jpg"
+  alt: Website screenshot
+link: https://github.com/Eelviny/eelviny.me
 ---
 
 ## Eelviny Website

@@ -1,8 +1,8 @@
 ---
-image: 
-  url: '/assets/images/boysdormproject.svg'
-  alt: 'Boys'' Dorm Project logo'
-link: 'http://fsmu.co.uk/projects/boys-dormitories/'
+image:
+  url: "/assets/images/boysdormproject.svg"
+  alt: Boys' Dorm Project logo
+link: http://fsmu.co.uk/projects/boys-dormitories/
 ---
 
 ## The Boys' Dorm Project

@@ -1,7 +1,7 @@
 ---
-image: 
-  url: '/assets/images/justgame.jpg'
-  alt: 'JustGame logos'
+image:
+  url: "/assets/images/justgame.jpg"
+  alt: JustGame logos
 ---
 
 ## JustGame

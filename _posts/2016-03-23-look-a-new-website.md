@@ -1,10 +1,13 @@
 ---
+title: Look! A new website
+date: 2016-03-23 00:00:00 Z
+categories:
+- source
 layout: post
-title: 'Look! A new website'
-section: 'Blog'
-image: 
-  url: '/assets/images/csscode.png'
-  alt: 'Snippet of CSS'
+section: Blog
+image:
+  url: "/assets/images/csscode.png"
+  alt: Snippet of CSS
 ---
 
 Time to get out of the free, but restricting grasp of Tumblr. It's a great service - don't get me wrong, but the style of blogging makes it feel more like your average social network with a few more advanced features bolted on.
