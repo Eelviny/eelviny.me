@@ -1,13 +1,10 @@
 ---
-title: Cyber Centurion 2015
-date: 2015-11-04 00:00:00 Z
-categories:
-- source
 layout: post
-section: Blog
-image:
-  url: "/assets/images/cybercenturion.jpg"
-  alt: Cyber Centurion logo
+title: 'Cyber Centurion 2015'
+section: 'Blog'
+image: 
+  url: '/assets/images/cybercenturion.jpg'
+  alt: 'Cyber Centurion logo'
 ---
 
 Doing something on the side is something every student should get into – Cyber Centurion is just one of these activities. It has nothing to do with the curriculum, and won’t help much towards your next exam, but it’s great fun that will look brilliant on the C.V. one day. Grades are only half the story, after all.

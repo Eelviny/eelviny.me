@@ -1,13 +1,10 @@
 ---
-title: Phone Woes
-date: 2016-04-21 00:00:00 Z
-categories:
-- source
 layout: post
-section: Blog
-image:
-  url: "/assets/images/nexus5.jpg"
-  alt: My Nexus 5
+title: 'Phone Woes'
+section: 'Blog'
+image: 
+  url: '/assets/images/nexus5.jpg'
+  alt: 'My Nexus 5'
 ---
 
 I'm probably not the first to comment on the sealed nature of technology these days, and I definitely won't be the last, but it's a trend that seems to have nothing good coming out of it.

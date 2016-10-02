@@ -1,13 +1,10 @@
 ---
-title: Decentralising Files
-date: 2016-09-28 00:00:00 Z
-categories:
-- source
 layout: post
-section: Blog
-image:
-  url: "/assets/images/ipfs-logo.png"
-  alt: IPFS Logo
+title: 'Decentralising Files'
+section: 'Blog'
+image: 
+  url: '/assets/images/ipfs-logo.png'
+  alt: 'IPFS Logo'
 ---
 
 With school over and a gap year ahead of me, I started to get a little bored. Working at a retail store isn't fun, but messing around with the next generation of web technologies certainly is!

@@ -1,13 +1,10 @@
 ---
-title: 'Ubuntu Updates: Offline'
-date: 2016-06-06 00:00:00 Z
-categories:
-- source
 layout: post
-section: Blog
-image:
-  url: "/assets/images/archive.svg"
-  alt: Update Archive
+title: 'Ubuntu Updates: Offline'
+section: 'Blog'
+image: 
+  url: '/assets/images/archive.svg'
+  alt: 'Update Archive'
 ---
 
 With the internet becoming so ubiquitous in this day and age, it's hard to think of a time where you wouldn't just be able to connect up to the internet and pull the updates directly from the provider. It's a very real issue for me though. First, some backstory:

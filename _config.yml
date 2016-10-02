@@ -1,23 +1,46 @@
----
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site info
 title: Eelviny
-timezone: UTC
+author: 
+  name: 'Elvin Luff'
+  email: 'elvinluff@gmail.com'
+  twitter: 'elvinluff'
+  description: >
+    My name's Elvin Luff, but I go by the username Eelviny. I am many things: systems administrator, web developer, world traveller, charity worker, student and a complete perfectionist. Welcome to my world.
+url: 'https://eelviny.me'
+twitter:
+  username: 'elvinluff'
+tracking_code: UA-38351552-4
+main_color: '#38b0de'
+logo: '/assets/images/logo512.png'
+
+# File location
+source: ./source
+destination: ./static
+
+# Site generation
+permalink: /blog/:year/:title/
+section: 'Blog'
+sass:
+  sass_dir: assets/styles
+  style: compressed
+  
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: [development]
+    
 collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-permalink: pretty
+  projects:
