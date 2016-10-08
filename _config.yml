@@ -24,11 +24,13 @@ tracking_code: UA-38351552-4
 main_color: '#38b0de'
 logo: '/assets/images/logo512.png'
 
+source: source
+destination: static
+
 # Site generation
 permalink: /blog/:year/:title/
 section: 'Blog'
 sass:
-  sass_dir: assets/styles
   style: compressed
   
 compress_html:
