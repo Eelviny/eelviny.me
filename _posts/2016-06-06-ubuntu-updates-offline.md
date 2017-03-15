@@ -9,7 +9,7 @@ image:
 
 With the internet becoming so ubiquitous in this day and age, it's hard to think of a time where you wouldn't just be able to connect up to the internet and pull the updates directly from the provider. It's a very real issue for me though. First, some backstory:
 
-I'm currently a volunteer for a charity working in Uganda, and I'm in charge of provisioning and maintaining the laptops and computers in the school's computer. Now, while Uganda does have internet in many locations, this school is not one of them. So, 2 years ago, I bought 20 computers, with Lubuntu preinstalled, into the school.
+I'm currently a volunteer for a charity working in Uganda, and I'm in charge of provisioning and maintaining the laptops and computers in the school's computer room. Now, while Uganda does have internet in many locations, this school is not one of them. So, 2 years ago, I bought 20 computers, with Lubuntu preinstalled, into the school.
 That was 2 years ago. I'm going to be going out to the school in less than a month and I think it's about time I get them caught up on 2 years worth of updates, and also install some extra software requested by the teachers. You'd think it would be simple, but no desktop operating system really caters for offline updating - Ubuntu included.
 
 Backstory over. Let's launch straight into the solution I've devised. It's taken a day of searching dated forum posts, navigating bugs and pure trial and error, but 5 trashed virtual machines later and I'm there.
