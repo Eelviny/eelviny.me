@@ -36,7 +36,8 @@ Then, you're going to upload to git and follow [this guide here](https://blog.cl
 ### Hey! That's cheating! Aren't you going to explain the rest?
 No. Too bad. There's no point in me duplicating and plagiarising someone else's work - I've covered the reasons why and why not, and the very helpful Junade Ali over at Cloudflare has all the technical details for you.
 
-If you want proof that this method works... Well, as of right now, you're staring right at it! I'm always on the hunt for the Next Big Thing™ so maybe I'll find a better way to host it. If you remember my post on [IPFS](/blog/2016/decentralising-files), my next idea is to try and host this website on that platform. There's a few challenges to overcome; Cloudflare is very much based in a HTTP world, but as the technology matures, I'll get there. As it stands right now, I've got the streamlined build process of GitHub, combined with all the edge nodes and caching of Cloudflare - for nothing. Cool, right? 
+If you want proof that this method works... Well, as of right now, you're staring right at it! I'm always on the hunt for the Next Big Thing™ so maybe I'll find a better way to host it. If you remember my post on [IPFS](/blog/2016/decentralising-files), my next idea is to try and host this website on that platform. There's a few challenges to overcome; Cloudflare is very much based in a HTTP world, but as the technology matures, I'll get there. As it stands right now, I've got the streamlined build process of GitHub, combined with all the edge nodes and caching of Cloudflare - for nothing. Cool, right?
+
 *[GH]: GitHub
 *[HTTP]: HyperText Transfer Protocol
 *[IPFS]: InterPlanetary File System
