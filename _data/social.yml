@@ -15,7 +15,7 @@
 
 - name: Last.fm
   username: Eelviny
-  site: http://www.last.fm/user/Eelviny
+  site: https://www.last.fm/user/Eelviny
   icon: fa-lastfm
 
 - name: LinkedIn
@@ -30,7 +30,7 @@
 
 - name: Reddit
   username: Eelviny
-  site: http://www.reddit.com/user/Eelviny/
+  site: https://www.reddit.com/user/Eelviny/
   icon: fa-reddit-alien
   
 - name: Soundcloud
@@ -40,7 +40,7 @@
   
 - name: Steam
   username: Eelviny
-  site: http://steamcommunity.com/id/eelviny/
+  site: https://steamcommunity.com/id/eelviny/
   icon: fa-steam
   
 - name: Tumblr
@@ -80,5 +80,5 @@
   
 - name: Skype
   username: Eelviny
-  site: 'https://www.skype.com/'
+  site: https://www.skype.com/
   icon: fa-skype
