@@ -7,7 +7,7 @@ image:
   alt: 'My Nexus 5'
 ---
 
-I'm probably not the first to comment on the sealed nature of technology these days, and I definitely won't be the last, but it's a trend that seems to have nothing good coming out of it.
+I'm probably not the first to comment on the sealed nature of technology these days, and I definitely won't be the last, but it's a trend that seems to have nothing good coming out of it.<!--more-->
 
 But first, some backstory: I have a nice big PC sitting on my desk. It's one of those things that is a slowly dying breed; a rare commodity. What's the point of having a big clunky PC when I can just pick up my laptop and go sit on the sofa? If anything, my PC is to me like what a classic car is to a car enthusiast. I don't replace my PC, I upgrade it. The parts are easy to slot in, as long as you're handy with a screwdriver, and if the processor starts to get a bit outdated, I'll replace only that - I keep the rest of my investment.
 

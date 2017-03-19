@@ -9,7 +9,7 @@ image:
 
 With school over and a gap year ahead of me, I started to get a little bored. Working at a retail store isn't fun, but messing around with the next generation of web technologies certainly is!
 
-A while ago, like the nerd I am, I started dreaming of ways that would make internet a little bit faster. Why couldn't ISPs just cache the important, static stuff instead of fetching it from a different network on a peering agreement each time?
+A while ago, like the nerd I am, I started dreaming of ways that would make internet a little bit faster.<!--more--> Why couldn't ISPs just cache the important, static stuff instead of fetching it from a different network on a peering agreement each time?
 The answer to this is SSL. Since each connection is encrypted end-to-end, with a different key for each connection, nothing can be cached like that. Instead, ISPs and all other networks have to fetch it from the main source each time.
 
 ### Enter IPFS. 

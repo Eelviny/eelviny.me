@@ -7,7 +7,7 @@ image:
   alt: 'Empty Wallet'
 ---
 
-Are you the type of person who thinks that the only way to get something done properly is to do it yourself? Are you willing to roll your sleeves up and get building from scratch? With the advent of a large variety of online hosting services, using the correct combination of them can let you host a static website for absolutely nothing. In a [previous post](/blog/2016/look-a-new-website), I covered a quick and cheap way to run a static website, but since then I've refined on the idea and come up with a solution that takes the cost from pennies per month to... nothing.
+Are you the type of person who thinks that the only way to get something done properly is to do it yourself? Are you willing to roll your sleeves up and get building from scratch? With the advent of a large variety of online hosting services, using the correct combination of them can let you host a static website for absolutely nothing.<!--more--> In a [previous post](/blog/2016/look-a-new-website), I covered a quick and cheap way to run a static website, but since then I've refined on the idea and come up with a solution that takes the cost from pennies per month to... nothing.
 
 ### Tell me your secrets!
 Not so fas-- Well, alright then. It's already been discovered before, and I'm not a magical wizard - I'm using [GitHub Pages](https://pages.github.com){:target="_blank"}. Now, GitHub Pages doesn't offer HTTPS, so what gives? Put [Cloudflare](https://www.cloudflare.com){:target="_blank"} over the top of that, and you're off to the races. *I've been watching a little too much LinusTechTips... He uses that term all the time...*

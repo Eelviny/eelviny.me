@@ -8,7 +8,7 @@ image:
 ---
 
 Time to get out of the free, but restricting grasp of Tumblr. It's a great service - don't get me wrong, but the style of blogging makes it feel more like your average social network with a few more advanced features bolted on.
-The solution? **Make your own!**
+The solution? **Make your own!**<!--more-->
 
 So, in the true Blue Peter style, here's a website I made earlier. Well, when I say earlier, I mean sort of *now* earlier. Sure, it's a little rough around the edges still, and there's still bits missing, but it's a website nonetheless!
 

@@ -22,6 +22,7 @@ twitter:
   username: 'elvinluff'
 main_color: '#38b0de'
 logo: '/assets/images/logo512.png'
+excerpt_separator: <!--more-->
 
 # Site generation
 permalink: /blog/:year/:title/

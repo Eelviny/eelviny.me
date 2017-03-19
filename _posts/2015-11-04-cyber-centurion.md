@@ -7,7 +7,7 @@ image:
   alt: 'Cyber Centurion logo'
 ---
 
-Doing something on the side is something every student should get into – Cyber Centurion is just one of these activities. It has nothing to do with the curriculum, and won’t help much towards your next exam, but it’s great fun that will look brilliant on the C.V. one day. Grades are only half the story, after all.
+Doing something on the side is something every student should get into – Cyber Centurion is just one of these activities. It has nothing to do with the curriculum, and won’t help much towards your next exam, but it’s great fun that will look brilliant on the C.V. one day.<!--more--> Grades are only half the story, after all.
 
 The UK Cyber Centurion is an opportunity for logical thinking to demonstrate our knowledge of digital security, and to do so we formed our own teams of 4-6 people. I’m in year 13 and teamed up with 3 other students from my class. We even get to choose a team name, and after about 2 minutes “Octan” was chosen. Our task was to take a computer operating system sent to us by Cyber Centurion, and find all the viruses, vulnerabilities and security holes we could; from something as simple as setting a password, to finding and eradicating viruses and spyware.
 
