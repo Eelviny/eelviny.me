@@ -1,14 +1,6 @@
-<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/what-input/2.1.1/what-input.min.js" integrity="sha256-MYI3/hm6ht8LQYtVTBoHIcQYM4tnUl1UXnjg/zA/j18=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js" integrity="sha256-orE03LSc9KVys7WmCWaOa5LauIvfUpJeaiKbggQBB+8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/what-input@5.0.3/dist/what-input.min.js" integrity="sha256-yYpZnv9m2EQxm8z6/mQAmY941wpZ0xO2F5AfmSpusMY=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk=" crossorigin="anonymous"></script>
 <script>
   $(document).foundation();
 </script>
-{% unless jekyll.environment == 'development' %}
-<script>
-(function(a,b,c,d,e){function f(){var a=b.createElement("script");a.async=!0;
-a.src="//radar.cedexis.com/1/11475/radar.js";b.body.appendChild(a)}/\bMSIE 6/i
-.test(a.navigator.userAgent)||(a[c]?a[c](e,f,!1):a[d]&&a[d]("on"+e,f))})
-(window,document,"addEventListener","attachEvent","load");
-</script>
-{% endunless %}
