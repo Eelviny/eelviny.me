@@ -5,8 +5,9 @@
     </div>
     <div class="small-12 medium-4 columns">
       <p class="text-center">
-        {% for nav in site.data.nav %}
-        <a href="{{ nav.url }}" title="{{ nav.section }}"><span class="secondary badge"><i class="fa {{ nav.icon }}"></i></span></a>
+        {% for nav in site.data.nav %}         
+          <a {% if nav.section == page.section %}href="#menu-bar" data-smooth-scroll{% else %}href="{{ nav.url }}"{% endif %}
+            title="{{ nav.section }}"><span class="secondary badge"><i class="fa {{ nav.icon }}"></i></span></a>
         {% endfor %}
         <a href="#menu-bar" title="Go to top" data-smooth-scroll><span class="secondary badge"><i class="fa fa-arrow-up"></i></span></a>
       </p>
