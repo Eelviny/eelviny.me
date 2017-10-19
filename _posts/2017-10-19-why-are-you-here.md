@@ -3,8 +3,8 @@ layout: post
 title: '...Why are you here?'
 section: 'Blog'
 image: 
-  url: '/assets/images/emptywallet.svg'
-  alt: ''
+  url: '/assets/images/nlwater.jpg'
+  alt: 'Water map of Netherlands'
 ---
 
 
@@ -38,8 +38,4 @@ Now, I don't consider myself the greatest blogger on the planet, but [Stuart's b
 ### Does it really matter?
 Maybe I'll answer the question with a question. In this growing age of globalisation, is it really so special to venture further away from home? With the internet, I could even set up a business in England while never touching the country. The only thing I see that is holding us all back is the beaurocracy and the paperwork. I'm lucky enough to have parents from different countries, so why not take advantage of the extra freedom it gives me?
 
-So please, stop asking.
-
-
-
-*[GH]: GitHub
+_So please, stop asking._
