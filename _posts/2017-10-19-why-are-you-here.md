@@ -21,7 +21,7 @@ After all, what's so bad with England? I could go into a big spiel about Brexit,
 ### The differences between visiting and living
 I've visited this small country so many times in my life, but you learn so much more by simply _living_ in a place, whether it be something normal like buying groceries, or boring like setting up appointments at the stadthuis. I think the easiest way to sum it up is with a list.
 
-1. Love cycling? You better. I loved cycling for fun in the UK, but here it's just a fact of life. Takes the fun out it really.
+1. Love cycling? You better. I loved cycling for fun in the UK, but here it's just a fact of life.
 2. Have you checked Buienradar today? Hope you checked the windspeed, because I forgot many times and ended up being late to things.
 3. They're not rude, they're just direct. Deal with it, they're not going to skirt around the question.
 4. They _smell_ the English on you. One small mess-up with the language, and they effortlessly switch to English. Nee, nederlands alsjeblieft... How will I learn...
@@ -36,6 +36,6 @@ I've visited this small country so many times in my life, but you learn so much 
 Now, I don't consider myself the greatest blogger on the planet, but [Stuart's blog](http://www.invadingholland.com/){:target="_blank"} sums up the experience so much better than I ever could! Got a few laughs out of that one.
 
 ### Does it really matter?
-Maybe I'll answer the question with a question. In this growing age of globalisation, is it really so special to venture further away from home? With the internet, I could even set up a business in England while never touching the country. The only thing I see that is holding us all back is the beaurocracy and the paperwork. I'm lucky enough to have parents from different countries, so why not take advantage of the extra freedom it gives me?
+Maybe I'll answer the question with a question. In this growing age of globalisation, is it really so special to venture further away from home? With the internet, I could even set up a business in England while never touching the country. We've got space travel, hyperloops, and instant communication. If I have a language problem, I have an instant translator in my palm.
 
-_So please, stop asking._
+The only thing I see that is holding us all back is the bureaucracy and the paperwork. There was always going to be a catch, wasn't there?
