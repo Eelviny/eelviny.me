@@ -7,7 +7,6 @@
 
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 # Site info
 title: Eelviny
@@ -21,7 +20,7 @@ url: 'https://eelviny.me'
 twitter:
   username: 'elvinluff'
 main_color: '#38b0de'
-logo: '/assets/images/logo512.png'
+logo: '/assets/images/icon512.png'
 excerpt_separator: <!--more-->
 
 # Site generation
