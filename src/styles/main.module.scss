@@ -1,9 +1,17 @@
-
-.homeBackground {
-  background-color: blue;
-  height:80vh;
+.wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto minmax(auto, 35rem) auto;
+  grid-column-start: 2;
+  grid-template-rows: 80vh;
+  grid-column-gap: 1rem;
+  background-color: #38b0de;
 }
 
+
 .main {
-  font-size: 200%
+  grid-column-start: 2;
+  h1 {
+    word-wrap: break-word;
+  }
 }
