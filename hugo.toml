@@ -1,0 +1,15 @@
+baseURL = 'https://eelviny.me/'
+languageCode = 'en-us'
+title = 'Eelviny'
+# theme = "hyde"
+
+[params]
+themeColor = "theme-base"
+description = "My name's Elvin Luff, but I go by the username Eelviny. I'm an AWS Cloud Architect by day, smart home tinkerer by night, with a passion for all things running and IoT. Welcome to my space."
+
+
+[Menus]
+main = [
+    { Name = "LinkedIn", URL = "https://www.linkedin.com/in/elvinluff/" },
+    { Name = "Github", URL = "https://github.com/Eelviny/" },
+]
