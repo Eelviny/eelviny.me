@@ -26,28 +26,8 @@
         />
 
         <!-- CSS -->
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="{{ .Site.BaseURL }}css/print.css"
-            media="print"
-        />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="{{ .Site.BaseURL }}css/poole.css"
-        />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="{{ .Site.BaseURL }}css/syntax.css"
-        />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="{{ .Site.BaseURL }}css/hyde.css"
-        />
-        {{ partial "head_fonts.html" . }}
+        {{ with (templates.Defer (dict "key" "global")) }} {{ partial "css.html"
+        . }} {{ end }} {{ partial "head_fonts.html" . }}
 
         <!-- Icons -->
         <link
@@ -62,6 +42,5 @@
         {{ range .AlternativeOutputFormats -}} {{ printf `
         <link href="%s" rel="%s" type="%s" title="%s" />
         ` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }} {{ end -}}
-        {{ partial "hook_head_end.html" . }}
     </head>
 </html>

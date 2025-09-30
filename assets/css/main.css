@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+@theme {
+    --color-aqua: #38b0de;
+    --font-sans:
+        "Jost", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif:
+        "Solway", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
