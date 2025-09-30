@@ -22,6 +22,7 @@
     "classes": [
       "basis-100",
       "basis-128",
+      "basis-64",
       "bg-aqua",
       "bg-gray-100",
       "border-4",
