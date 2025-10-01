@@ -1,9 +1,9 @@
 {{ define "main" -}} {{ $image := resources.Get "images/icon512.avif" }}
 <div class="bg-aqua pb-48 pt-32">
     <div
-        class="justify-items-center-safe items-center flex flex-wrap-reverse text-white max-w-[90rem] mx-auto"
+        class="items-center flex flex-wrap-reverse text-white max-w-[90rem] mx-auto gap-x-25"
     >
-        <div class="flex-2 basis-128 m-4">
+        <div class="flex-3 basis-150 m-4">
             <h1
                 class="font-serif text-6xl/18 font-bold text-center md:text-left"
             >
@@ -12,7 +12,7 @@
             <p class="text-2xl mt-8 text-justify md:text-left">
                 {{ .Site.Params.description }}
             </p>
-            <p class="text-2xl mt-4 text-justify md:text-left">
+            <p class="text-xl mt-4 text-justify md:text-left">
                 I spend my 40 hours as a Cloud Consultant for Xebia, helping
                 organizations across all industries kick-start their next
                 project in Amazon Web Services. Whether your project is the next
@@ -22,43 +22,27 @@
                 <span class="font-bold">That's me.</span>
             </p>
         </div>
-        <div class="flex-1 m-4 basis-100">
+        <div class="flex-1 basis-80 m-8">
             <img
-                class="border-4 rounded-lg grayscale hover:filter-none transition duration-500"
+                class="mx-auto border-4 rounded-lg grayscale hover:filter-none active:filter-none transition duration-500"
                 src="{{ $image.RelPermalink }}"
             />
         </div>
     </div>
 </div>
 <div class="max-w-7xl mx-auto pt-8">
-    <h1 class="font-serif text-6xl/18 font-bold mb-8 m-4">Where to find me</h1>
-    <div class="flex flex-wrap">
+    <h1 class="font-serif text-5xl/18 font-bold mb-8 m-4">Where to find me</h1>
+    <div class="flex flex-wrap gap-4 m-4">
+        {{ range .Site.Data.contact }}
         <div
-            class="flex-1 text-center bg-gray-100 transition hover:bg-gray-200 m-4 p-4 rounded-sm basis-64"
+            class="flex-1 text-center bg-gray-100 transition hover:bg-gray-200 p-4 rounded-sm basis-64"
         >
-            <p class="text-xl">LinkedIn</p>
-            <a
-                class="text-blue-500"
-                href="https://www.linkedin.com/in/elvinluff/"
-                >https://www.linkedin.com/in/elvinluff/</a
-            >
+            <p class="text-xl">{{ .name }}</p>
+            {{ if index .URL }}
+            <a class="text-blue-500" href="{{ .URL }}">{{ .URL }}</a>
+            {{ end }}
         </div>
-        <div
-            class="flex-1 text-center bg-gray-100 transition hover:bg-gray-200 m-4 p-4 rounded-sm basis-64"
-        >
-            <p class="text-xl">Github</p>
-            <a class="text-blue-500" href="https://github.com/Eelviny"
-                >https://github.com/Eelviny</a
-            >
-        </div>
-        <div
-            class="flex-1 text-center bg-gray-100 transition hover:bg-gray-200 m-4 p-4 rounded-sm basis-64"
-        >
-            <p class="text-xl">Email</p>
-            <a class="text-blue-500" href="mailto:elvin@eelviny.me"
-                >elvin@eelviny.me</a
-            >
-        </div>
+        {{ end }}
     </div>
 </div>
 {{- end }}
