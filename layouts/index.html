@@ -1,4 +1,4 @@
-{{ define "main" -}} {{ $image := resources.Get "images/icon512.avif" }}
+{{ define "main" -}}
 <div class="bg-aqua pb-48 pt-32">
     <div
         class="items-center flex flex-wrap-reverse text-white max-w-[90rem] mx-auto gap-x-25"
@@ -22,7 +22,8 @@
                 <span class="font-bold">That's me.</span>
             </p>
         </div>
-        <div class="flex-1 basis-80 m-8">
+        <div class="flex-1 basis-80 m-8 select-none">
+            {{ $image := resources.Get "images/icon512.avif" }}
             <img
                 class="mx-auto border-4 rounded-lg grayscale hover:filter-none active:filter-none transition duration-500"
                 src="{{ $image.RelPermalink }}"
@@ -30,16 +31,52 @@
         </div>
     </div>
 </div>
-<div class="max-w-7xl mx-auto pt-8">
-    <h1 class="font-serif text-5xl/18 font-bold mb-8 m-4">Where to find me</h1>
-    <div class="flex flex-wrap gap-4 m-4">
+<div class="max-w-7xl mx-auto pt-8 p-4">
+    <h1 class="font-serif text-4xl/18 md:text-5xl/18 font-bold mb-8">
+        What I'm working on.
+    </h1>
+    {{ range .Site.RegularPages -}}
+    <article class="flex flex-wrap items-end">
+        <div class="flex-auto">
+            <h2 class="text-3xl">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+        </div>
+        <div class="flex-initial">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="text-2xl text-gray-500">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </div>
+        <div class="flex-auto my-4">
+            {{ .Summary }}
+        </div>
+      {{ if .Truncated }}
+      <div class="read-more-link">
+        <a href="{{ .RelPermalink }}">Read More…</a>
+      </div>
+      {{ end }}
+    </article>
+    {{- end }}
+    <h1 class="font-serif text-4xl/18 md:text-5xl/18 font-bold mb-8">
+        Where to find me.
+    </h1>
+    <div class="flex flex-wrap gap-4">
         {{ range .Site.Data.contact }}
         <div
             class="flex-1 text-center bg-gray-100 transition hover:bg-gray-200 p-4 rounded-sm basis-64"
         >
-            <p class="text-xl">{{ .name }}</p>
             {{ if index .URL }}
-            <a class="text-blue-500" href="{{ .URL }}">{{ .URL }}</a>
+            <a href="{{ .URL }}" target="_blank">
+                {{ end }}
+                <svg
+                    class="max-w-20 m-auto"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    transform=""
+                >
+                    <path d="{{ .icon }}"></path>
+                </svg>
+                <p class="text-xl">{{ .name }}</p>
+                {{ if index .URL }}
+            </a>
             {{ end }}
         </div>
         {{ end }}
