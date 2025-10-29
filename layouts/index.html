@@ -38,7 +38,7 @@
     {{ range .Site.RegularPages -}}
     <article class="flex flex-wrap items-end">
         <div class="flex-auto">
-            <h2 class="text-3xl">
+            <h2 class="font-serif text-3xl">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
         </div>
@@ -55,7 +55,7 @@
       {{ end }}
     </article>
     {{- end }}
-    <h1 class="font-serif text-4xl/18 md:text-5xl/18 font-bold mb-8">
+    <h1 class="font-serif text-4xl/18 md:text-5xl/18 font-bold mt-8 mb-8">
         Where to find me.
     </h1>
     <div class="flex flex-wrap gap-4">

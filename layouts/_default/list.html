@@ -1,9 +1,24 @@
 {{ define "main" -}}
-<ul class="posts">
+<ul class="max-w-7xl mx-auto pt-8 p-4">
 {{ range .Data.Pages -}}
-  <li>
-    <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
-  </li>
+  <article class="flex flex-wrap items-end mb-4 mt-4">
+      <div class="flex-auto">
+          <h2 class="font-serif text-3xl">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+      </div>
+      <div class="flex-initial">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="text-2xl text-gray-500">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </div>
+      <div class="flex-auto my-4">
+          {{ .Summary }}
+      </div>
+    {{ if .Truncated }}
+    <div class="read-more-link">
+      <a href="{{ .RelPermalink }}">Read More…</a>
+    </div>
+    {{ end }}
+  </article>
 {{- end }}
 </ul>
 {{- end }}
