@@ -22,7 +22,7 @@ As I've not had any experience in building a battery before, I first needed to e
 - What is the tolerance of the UPS, does it have mechanisms that might flat out reject my modifications?
 - While LFP batteries have a much higher energy density, am I able to find cells that will fit nicely into the slot where the old battery went?
 
-Tackling the first few required some searching of internet forums, and here's one of the first articles I ran across, on [DIY solar forums](https://diysolarforum.com/threads/use-a-lifepo4-battery-pack-inside-ups.12490/). From a voltage perspective, it turns out that as the nominal voltage of LFP cells are around 3.2 volts and placing 4 in series nets us 12.8 volts. Since this is slightly above the 12V we were aiming for, what this mostly likely means is that the maximum voltage of the battery will be higher than the maximum voltage the UPS can provide while charging. This will result in the battery never reaching full charge, but if it plays out right, it could be a benefit to battery health, as permanently pinning a cell to 100% is not good for the chemistry. We'll have to see, as too low could mean we just don't have enough capacity.
+Tackling the first few required some searching of internet forums, and here's one of the first articles I ran across, on [DIY solar forums.](https://diysolarforum.com/threads/use-a-lifepo4-battery-pack-inside-ups.12490/) From a voltage perspective, it turns out that as the nominal voltage of LFP cells are around 3.2 volts and placing 4 in series nets us 12.8 volts. Since this is slightly above the 12V we were aiming for, what this mostly likely means is that the maximum voltage of the battery will be higher than the maximum voltage the UPS can provide while charging. This will result in the battery never reaching full charge, but if it plays out right, it could be a benefit to battery health, as permanently pinning a cell to 100% is not good for the chemistry. We'll have to see, as too low could mean we just don't have enough capacity.
 
 An aside here - I found out that LFP was a great choice to go with as the nominal voltage of Li-ion cells are a bit higher at 3.6V. This means it's not possible to get a number near 12V.
 
@@ -89,7 +89,7 @@ Picking the UPS up, it was hot. VERY hot. The battery itself was warm which is t
 
 I started to diagnose the issue, fearing that I'd killed it. This was the moment I pulled the battery back out, and re-worked the nickel strips. I'm unsure whether the BMS cut out or whether the UPS itself hit a thermal limit, but once I put the battery back in an hour later, it fired back up and ran for a further 5 minutes before stopping. This time it was the UPS reporting the battery was empty, much to my relief.
 
-So while I can theoretically run this for at 200W for 23 minutes on one charge, for safety reasons I've decided to not let it run for more than 10 minutes. Luckily this can easily be configured in the `apcupsd` tool on the server, so it will shutdown either when the battery level is low, or after 10 minutes running on battery - whichever comes first.
+So while I can theoretically run this at 200W for 23 minutes on one charge, for safety reasons I've decided to not let it run for more than 10 minutes. Luckily this can easily be configured in the `apcupsd` tool on the server, so it will shutdown either when the battery level is low, or after 10 minutes running on battery - whichever comes first.
 
 ## So, what did I learn?
 
