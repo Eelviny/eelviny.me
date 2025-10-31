@@ -3,6 +3,7 @@
     <main>
         {{ partial "navbar.html" . }}
         {{ block "main" . -}}{{- end }}
+        {{ partial "footer.html" . }}
     </main>
 
     {{ if ne hugo.Environment "development"  }}
