@@ -4,10 +4,12 @@ Tags = []
 Categories = []
 date = '2025-10-31T11:08:33+01:00'
 title = "How to replace a UPS battery, the hard way"
-featured_image = "0f35e5.avif"
+featured_image = "318331.avif"
 +++
 
 My homelab needs are pretty simple. Sitting in the closet by the front door, just below the energy meter, is what I call *the Vault*. A single tower PC on a shelf, that runs my entire smarthome. I designed it as an everything in one device - it pulls duty as a NAS, OPNsense router, Jellyfin server and Home Assistant hub, among other things. Single point of failure? Absolutely, which is why I've got a UPS to protect it.
+
+![My Eaton 3S 550](0f35e5.avif)
 
 Enter the solution - this affordable Eaton 3S 550 that I picked up a while ago for I don't remember how many euros. Since it's only got to protect one computer, and we get power cuts almost never here, its only job is to allow it to shutdown safely and protect my data in the unlikely event of an outage. With a USB connection to the machine, it's been reliably sending shutdown commands after about 5 minutes... until recently. It runs on a single sealed lead-acid battery, and after a few years of service, it's in need of replacement.
 

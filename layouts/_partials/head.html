@@ -20,10 +20,35 @@
         {{- else -}}
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
         {{- end }}
+
+        <meta property="og:locale" content="en_GB" />
         <meta
-            name="description"
-            content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
+            property="og:type"
+            content="{{ if .IsPage }}article{{ else }}website{{ end }}"
         />
+        <meta
+            property="og:title"
+            content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}"
+        />
+        <meta
+            property="og:description"
+            content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}"
+        />
+        <meta property="og:url" content="{{ .Permalink }}" />
+        <meta property="og:site_name" content="{{ .Site.Title }}" />
+
+        {{ if .Params.featured_image }}
+        <meta
+            property="og:image"
+            content="{{ .Permalink }}/{{ .Params.featured_image }}"
+        />
+        <meta
+            property="og:image:secure_url"
+            content="{{ .Permalink }}/{{ .Params.featured_image }}"
+        />
+        {{- end }}
+        {{ range .Params.categories }}<meta property="article:section" content="{{ . }}">{{ end }}
+        {{ if isset .Params "date" }}<meta property="article:published_time" content="{{ (time .Date).Format "2006-01-02T15:04:05Z" }}">{{ end }}
 
         <!-- CSS -->
         {{ with (templates.Defer (dict "key" "global")) }} {{ partial "css.html"
