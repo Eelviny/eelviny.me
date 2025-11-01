@@ -4,7 +4,7 @@ Tags = []
 Categories = []
 date = '2025-10-31T11:08:33+01:00'
 title = "How to replace a UPS battery, the hard way"
-featured_image = "318331.avif"
+featured_image = "feature.jpg"
 +++
 
 My homelab needs are pretty simple. Sitting in the closet by the front door, just below the energy meter, is what I call *the Vault*. A single tower PC on a shelf, that runs my entire smarthome. I designed it as an everything in one device - it pulls duty as a NAS, OPNsense router, Jellyfin server and Home Assistant hub, among other things. Single point of failure? Absolutely, which is why I've got a UPS to protect it.
