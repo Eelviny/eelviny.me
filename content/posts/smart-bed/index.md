@@ -11,7 +11,7 @@ You know what's the biggest mood killer in the bedroom? Alright, maybe there's p
 
 ![The final result first](0db989.avif)
 
-Looks cool, right? We're skipping ahead a bit here though, let's rewind to the beginning. It starts with the [IKEA MALM](https://www.ikea.com/nl/en/p/malm-bed-frame-high-w-2-storage-boxes-black-brown-s09130479/#content). This simple, mostly solid bedframe has lasted me through many house moves, and still soldiers on to this day. With its simple, square design and plenty of integrated storage underneath, it's everything I could ask for out of a standard IKEA product. But under its faux-wood dark exterior, it's either chipboard or hollowed out paper. Plenty of space to add some smartness. I not only wanted to have some lighting, but also the ability to hook into the rest of my smart home, based on Home Assistant. ESPHome came as the obvious choice, allowing me to hook up lights and buttons, and have it all controlled centrally.
+Looks cool, right? We're skipping ahead a bit here though, let's rewind to the beginning. It starts with the [IKEA MALM.](https://www.ikea.com/nl/en/p/malm-bed-frame-high-w-2-storage-boxes-black-brown-s09130479/#content) This simple, mostly solid bedframe has lasted me through many house moves, and still soldiers on to this day. With its simple, square design and plenty of integrated storage underneath, it's everything I could ask for out of a standard IKEA product. But under its faux-wood dark exterior, it's either chipboard or hollowed out paper. Plenty of space to add some smartness. I not only wanted to have some lighting, but also the ability to hook into the rest of my smart home, based on Home Assistant. ESPHome came as the obvious choice, allowing me to hook up lights and buttons, and have it all controlled centrally.
 
 ## The requirements list
 
@@ -94,8 +94,279 @@ Alright, running two different colour temperatures was just for show, but the ma
 
 As with any new DIY project, there's a bunch of things I learned for future endeavours, but also some things that of course I'd like to improve about this design. The base bedframe was a perfect candidate for the job, but I actually built this last year, before I moved into my current place. Future me did not like the way that past me did not include any considerations for disassembling the bedframe, as I had simply wired it up on the already assembled bed. This meant I had to cut the wires, then solder them back together later. This is why some of the wires are a little too short around the control panel, as I didn't leave enough slack to accommodate for this. Unfortunately I have not learned from this, as I didn't put any connectors in this time either. Next time, I guess.
 
+Another note, the PCB is probably way too simple; I'm a beginner and don't own an oscilloscope so there's a bunch of noise and other things that make the LEDs glow ever so slightly even when off. Not enough to shine any light, but noticeable if you look at it. I made it in KiCad and I'll share the design if you ask... on the condition that you improve it!
+
 But the biggest lesson I learned was the proper implementation of the [Home Approval Factor.](https://newsletter.openhomefoundation.org/open-home-approval-factor/) While my partner does like and use the lights built into the bed, the indirect lights just don't have enough light when trying to read a book. So in reality, the bed looks like this:
 
 ![Her addition](27666a.avif)
 
 Convenience wins over aesthetics this time. Guess I know what the biggest new feature will be if I build a V2.
+
+## The code
+
+For those interested, here's my ESPHome config so you can take inspiration for your own projects:
+
+```yaml
+esphome:
+  name: bed
+  friendly_name: Bed
+  platformio_options:
+    board_build.flash_mode: dio
+  on_boot:
+    then:
+      - light.control:
+          id: light_left
+          state: off
+          color_mode: COLD_WARM_WHITE
+          brightness: 80%
+          color_temperature: 3000 K
+      - light.control:
+          id: light_right
+          state: off
+          color_mode: COLD_WARM_WHITE
+          brightness: 80%
+          color_temperature: 3000 K
+
+esp32:
+  board: wt32-eth01
+  framework:
+    type: esp-idf
+
+# Enable logging
+# logger:
+
+api:
+  reboot_timeout: 8h
+  encryption:
+    key: !secret encryption_key
+
+ota:
+  - platform: esphome
+
+ethernet:
+  type: LAN8720
+  mdc_pin: GPIO23
+  mdio_pin: GPIO18
+  clk_mode: GPIO0_IN
+  phy_addr: 1
+  power_pin: GPIO16
+
+network:
+  enable_ipv6: true
+
+button:
+  - platform: restart
+    name: Restart
+    id: restart_button
+  - platform: safe_mode
+    name: Restart (Safe Mode)
+    id: restart_safe_mode_button
+
+i2c:
+  sda: GPIO5
+  scl: GPIO17
+  scan: false
+
+sensor:
+  - platform: uptime
+    name: Uptime
+    id: uptime_sensor
+  - platform: bme680
+    address: 0x77
+    heater:
+      duration: 0s
+    temperature:
+      name: Temperature
+      filters:
+        - sliding_window_moving_average:
+            window_size: 10
+            send_every: 5
+        - offset: -2.5
+        - delta: 0.1
+    humidity:
+      name: Humidity
+      filters:
+        - sliding_window_moving_average:
+            window_size: 10
+            send_every: 5
+        - delta: 0.1
+    pressure:
+      name: Pressure
+      filters:
+        - sliding_window_moving_average:
+            window_size: 10
+            send_every: 5
+        - delta: 0.1
+    update_interval: 3s
+
+  - platform: adc
+    pin: GPIO32
+    id: left_voltage
+    update_interval: 1s
+    attenuation: auto
+    internal: true
+    filters:
+      - delta: 0.1
+  - platform: adc
+    pin: GPIO33
+    id: right_voltage
+    update_interval: 1s
+    attenuation: auto
+    internal: true
+    filters:
+      - delta: 0.1
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO39
+      mode:
+        input: true
+    name: Left Button
+    id: left_button
+    icon: mdi:light-switch
+    disabled_by_default: true
+    filters:
+      - delayed_on: 10ms
+    on_multi_click:
+      - timing:
+          - ON for 20ms to 1s
+          - OFF for at least 0.2s
+        then:
+          - light.toggle: light_left
+      - timing:
+          - ON for 20ms to 1s
+          - OFF for at most 1s
+          - ON for 20ms to 1s
+          - OFF for at least 0.2s
+        then:
+          - light.toggle: light_under
+      - timing:
+          - ON for at least 1s
+        then:
+          - homeassistant.event:
+              event: esphome.bed_button_left_long_pressed
+  - platform: gpio
+    pin:
+      number: GPIO36
+      mode:
+        input: true
+    name: Right Button
+    id: right_button
+    icon: mdi:light-switch
+    disabled_by_default: true
+    filters:
+      - delayed_on: 10ms
+    on_multi_click:
+      - timing:
+          - ON for 20ms to 1s
+          - OFF for at least 0.2s
+        then:
+          - light.toggle: light_right
+      - timing:
+          - ON for 20ms to 1s
+          - OFF for at most 1s
+          - ON for 20ms to 1s
+          - OFF for at least 0.2s
+        then:
+          - light.toggle: light_under
+      - timing:
+          - ON for at least 1s
+        then:
+          - homeassistant.event:
+              event: esphome.bed_button_right_long_pressed
+  - platform: template
+    name: "Left Occupancy"
+    device_class: occupancy
+    lambda: |-
+      return id(left_voltage).state > 2.0;
+    filters:
+      - delayed_off: 2s
+    on_release:
+      - if:
+          condition:
+            switch.is_on: leave_light
+          then:
+            - light.turn_on:
+                id: light_under
+            - delay: 10s
+            - light.turn_off:
+                id: light_under
+                transition_length: 5s
+  - platform: template
+    name: "Right Occupancy"
+    device_class: occupancy
+    lambda: |-
+      return id(right_voltage).state > 1.0;
+    filters:
+      - delayed_off: 2s
+    on_release:
+      - if:
+          condition:
+            switch.is_on: leave_light
+          then:
+            - light.turn_on:
+                id: light_under
+            - delay: 10s
+            - light.turn_off:
+                id: light_under
+                transition_length: 5s
+
+switch:
+  - platform: template
+    id: leave_light
+    name: Leave Light
+    optimistic: true
+    icon: mdi:lightbulb-auto
+    restore_mode: RESTORE_DEFAULT_ON
+
+output:
+  - platform: ledc
+    id: warm_white_output_left
+    frequency: 9765Hz
+    pin:
+      number: GPIO4
+  - platform: ledc
+    id: white_output_left
+    frequency: 9765Hz
+    phase_angle: 72
+    pin:
+      number: GPIO2
+  - platform: ledc
+    id: warm_white_output_right
+    frequency: 9765Hz
+    phase_angle: 144
+    pin:
+      number: GPIO12
+  - platform: ledc
+    id: white_output_right
+    frequency: 9765Hz
+    phase_angle: 216
+    pin:
+      number: GPIO14
+  - platform: ledc
+    id: output_under
+    frequency: 9765Hz
+    phase_angle: 288
+    pin:
+      number: GPIO15
+
+light:
+  - platform: cwww
+    id: light_left
+    name: Left Light
+    warm_white: warm_white_output_left
+    cold_white: white_output_left
+    cold_white_color_temperature: 6500 K
+    warm_white_color_temperature: 2400 K
+  - platform: cwww
+    id: light_right
+    name: Right Light
+    warm_white: warm_white_output_right
+    cold_white: white_output_right
+    cold_white_color_temperature: 6500 K
+    warm_white_color_temperature: 2400 K
+  - platform: monochromatic
+    id: light_under
+    name: Under Light
+    output: output_under
+```
