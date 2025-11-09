@@ -38,7 +38,7 @@ The main challenge was cutting a channel into the top of the headboard, so I tur
 
 The cheapest method of adding ethernet to an ESPHome project that I know of is to use the ESP32-ETH01 module, easily obtained off AliExpress. It has everything you need and nothing you don't - an ESP32, some GPIO and of course an RJ-45 jack. There's no onboard USB serial or anything like that which is just a nice-to-have, and once you've got ESPHome flashed on there, all future firmware updates go over the network anyway.
 
-This is of course not enough to power the LED strips themselves. To do that, I need a way for the ESP32 to switch on and off a 24 V line. A MOSFET will do the trick, so I picked up these nice and cheap [N‑Channel 30 V 55 A MOSFETs from LCSC](https://www.lcsc.com/product-detail/C36499176.html). While I could frankenstein something together with hacky soldering, a clean solution is preferable, so I mocked up this little PCB to mount the ESP32‑ETH01 onto:
+This is of course not enough to power the LED strips themselves. To do that, I need a way for the ESP32 to switch on and off a 24 V line. A MOSFET will do the trick, so I picked up these nice and cheap [N‑Channel 30 V 55 A MOSFETs from LCSC.](https://www.lcsc.com/product-detail/C36499176.html) While I could frankenstein something together with hacky soldering, a clean solution is preferable, so I mocked up this little PCB to mount the ESP32‑ETH01 onto:
 
 ![The PCB](69058c.avif)
 
@@ -52,7 +52,7 @@ The last thing was to hack a hole into the back of the headboard. I thought this
 
 ## Bed presence
 
-The idea is to sense when someone is lying on one side or the other, so automations can be built around it. I borrowed the idea from an existing product – the [Bed Presence for ESPHome sensor](https://www.elevatedsensors.com/store/p/bed-presence-for-esphome). It does exactly what it says by using two Force‑Sensing Resistors (FSR) that run along a bed slat on each side. When a weight is applied to the mattress above, the voltage changes. Unfortunately it didn’t work straight out of the box for me, as the voltage change wasn’t changing enough to reliably detect someone. That suggested the force was being transferred too evenly between the slats, so I added something to increase the load on that particular slat.
+The idea is to sense when someone is lying on one side or the other, so automations can be built around it. I borrowed the idea from an existing product – the [Bed Presence for ESPHome sensor](https://www.elevatedsensors.com/store/p/bed-presence-for-esphome). It does exactly what it says by using two Force‑Sensing Resistors (FSR) that run along a bed slat on each side. When a weight is applied to the mattress above, the voltage changes. Unfortunately it didn’t work straight out of the box for me, as the voltage wasn’t changing enough to reliably detect someone. That suggested the force was being transferred too evenly between the slats, so I added something to increase the load on that particular slat.
 
 ![Foam on FSR](51295e.avif)
 
