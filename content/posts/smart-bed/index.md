@@ -3,6 +3,7 @@ Description = ""
 Tags = []
 Categories = []
 menu = "main"
+title = "Setting the mood with a DIY IKEA smart bed hack"
 date = '2025-11-09T12:47:53+01:00'
 +++
 
