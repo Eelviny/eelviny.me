@@ -5,6 +5,7 @@ Categories = []
 menu = "main"
 title = "Setting the mood with a DIY IKEA smart bed hack"
 date = '2025-11-09T12:47:53+01:00'
+featured_image = "feature.jpg"
 +++
 
 You know what's the biggest mood killer in the bedroom? Alright, maybe there's plenty of situations that I'm skipping over here, but for me it would be turning on the *big light*, and blasting a peaceful space with the power of a small sun. That's why I set out to add some more subtle lighting to the space, by building my own integrated hotel-style bed.
