@@ -26,7 +26,7 @@ So that's exactly what I did. Pulling the lid off the washing machine revealed j
 
 ![The guts of the Shelly](5220d7.avif)
 
-Note that the device I'm showing above is actually the Shelly Plus i4 that I use elsewhere as that's all I took pictures of, but the process is about the same. Internally the device has a GPIO header that exposes the necessary pins to power up the board and flash a new firmware, but I didn't have a male connector of the right pin pitch to connect with it. Luckly, the wires inside of a solid core RJ45 ethernet cable are just the right size, and what I had on hand. I soldered a tiny little jig together to connect it to a USB serial device, and we're off to the races.
+Note that the device I'm showing above is actually the Shelly Plus i4 that I use elsewhere as that's all I took pictures of, but the process is about the same (the i4 definitely would not work for this usecase). Internally the device has a GPIO header that exposes the necessary pins to power up the board and flash a new firmware, but I didn't have a male connector of the right pin pitch to connect with it. Luckly, the wires inside of a solid core RJ45 ethernet cable are just the right size, and what I had on hand. I soldered a tiny little jig together to connect it to a USB serial device, and we're off to the races.
 
 ![Installing it](cfed7c.avif)
 
