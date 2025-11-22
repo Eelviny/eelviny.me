@@ -12,7 +12,7 @@ Picture the situation: your alarm's gone off at 5am, you're re-thinking all your
 
 ![Final result first](94d1dc.avif)
 
-There's a very high chance that I own the same wardrobe as you. It's an IKEA PAX system, with white sides and faux-wood shelves. It stores the majority of the clothes owned by the both of us. Not much more to say here really. IKEA does have some innovative solutions to add lighting, such as [these overhead lights,](https://www.ikea.com/nl/en/p/ytberg-cabinet-lighting-black-dimmable-60527891/) or these [under-shelf light bars,](https://www.ikea.com/nl/en/cat/pax-wardrobe-lighting-42242/) but at the end of the day, these solutions need to be designed to be easy for the average layperson to add onto their existing wardrobe or cupboards. As such, they either need batteries, or have separate wires and smart remotes.
+There's a very high chance that I own the same wardrobe as you. It's an IKEA PAX system, with white sides and faux-wood shelves. It stores the majority of the clothes owned by the both of us. Not much more to say here really. IKEA does have some innovative solutions to add lighting, such as [these overhead lights,](https://www.ikea.com/nl/en/p/ytberg-cabinet-lighting-black-dimmable-60527891/) or these [under-shelf light bars,](https://www.ikea.com/nl/en/p/rolfstorp-led-lighting-dimmable-white-90519917/) but at the end of the day, these solutions need to be designed to be easy for the average layperson to add onto their existing wardrobe or cupboards. As such, they either need batteries, or have separate wires and smart remotes.
 
 ## Bring on the light
 
