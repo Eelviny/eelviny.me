@@ -30,13 +30,13 @@ One trip to Hornbach later yielded these lovely [15mm x 15mm right-angle alumini
 
 ![The mirror on its front](3512ce.avif)
 
-If you take a look at the bottom, the LED strip is slightly too long! It comes in 10cm sections and there's about a 2cm overlap. The silicon compound of the top prevents it from sticking well to itself... to this day, I've just let it dangle freely below the mirror, it's still tucked in enough that you can't see it directly. I'm not claiming to have the perfect solution here.
+If you take a look at the bottom, the LED strip is slightly too long! It comes in 10cm sections and there's about a 2cm overlap. The silicon compound covering the top prevents it from sticking well to itself... to this day, I've just let it dangle freely below the mirror, it's still tucked in enough that you can't see it directly. I'm not claiming to have the perfect solution here.
 
 Moving on to the electronics powering it. The skitchiest part of this project has to be the power supply, which is a 24 volt SANPU unit with the casing removed. These plastic cases are difficult to remove and for very good reason; this is definitely a "don't try this at home" move... but the case was just too tall to fit, and I knew that it would be inaccessible once mounted on the wall.
 
 ![The PCB](8d8b31.avif)
 
-For the PCB itself, I repurposed board that I had lying around from previous experiments. The white PCB has space for 5 MOSFETs, each one able to handle a channel on a 24V LED strip. In this situation I'm using a warm/cool white combination strip so I only populated 2 of the 5 sections, and then I added a BME680 temperature, humidity and air quality sensor to the bottom. Due to the height constraints and wanting to make sure the sensor didn't sit so proud off the board that it was right up against the wall, I brought out the hot air rework station to solder the two directly to each other without the pin connection that I had originally designed it for.
+For the PCB itself, I repurposed a board that I had lying around from previous experiments. The white PCB has space for 5 MOSFETs, each one able to handle a channel on a 24V LED strip. In this situation I'm using a warm/cool white combination strip so I only populated 2 of the 5 sections, and then I added a BME680 temperature, humidity and air quality sensor to the bottom. Due to the height constraints and wanting to make sure the sensor didn't sit so proud off the board that it was right up against the wall, I brought out the hot air rework station to solder the two directly to each other without the pin connection that I had originally designed it for.
 
 The heart of the board is an ESP32-C6 mini board off AliExpress, and I also use a 24V to 5V DC-DC converter, again off AliExpress. This interfaces with the sensor and lights. With that all in place, it's time to get this onto the wall!
 
