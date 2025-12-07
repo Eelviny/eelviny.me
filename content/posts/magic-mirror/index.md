@@ -32,7 +32,7 @@ One trip to Hornbach later yielded these lovely [15mm x 15mm right-angle alumini
 
 If you take a look at the bottom, the LED strip is slightly too long! It comes in 10cm sections and there's about a 2cm overlap. The silicon compound covering the top prevents it from sticking well to itself... to this day, I've just let it dangle freely below the mirror, it's still tucked in enough that you can't see it directly. I'm not claiming to have the perfect solution here.
 
-Moving on to the electronics powering it. The skitchiest part of this project has to be the power supply, which is a 24 volt SANPU unit with the casing removed. These plastic cases are difficult to remove and for very good reason; this is definitely a "don't try this at home" move... but the case was just too tall to fit, and I knew that it would be inaccessible once mounted on the wall.
+Moving on to the electronics powering it. The sketchiest part of this project has to be the power supply, which is a 24 volt SANPU unit with the casing removed. These plastic cases are difficult to remove and for very good reason; this is definitely a "don't try this at home" move... but the case was just too tall to fit, and I knew that it would be inaccessible once mounted on the wall.
 
 ![The PCB](8d8b31.avif)
 
