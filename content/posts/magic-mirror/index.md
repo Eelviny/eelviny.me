@@ -34,7 +34,7 @@ If you take a look at the bottom, the LED strip is slightly too long! It comes i
 
 Moving on to the electronics powering it. The skitchiest part of this project has to be the power supply, which is a 24 volt SANPU unit with the casing removed. These plastic cases are difficult to remove and for very good reason; this is definitely a "don't try this at home" move... but the case was just too tall to fit, and I knew that it would be inaccessible once mounted on the wall.
 
-![8d8b31.avif](The PCB)
+![The PCB](8d8b31.avif)
 
 For the PCB itself, I repurposed board that I had lying around from previous experiments. The white PCB has space for 5 MOSFETs, each one able to handle a channel on a 24V LED strip. In this situation I'm using a warm/cool white combination strip so I only populated 2 of the 5 sections, and then I added a BME680 temperature, humidity and air quality sensor to the bottom. Due to the height constraints and wanting to make sure the sensor didn't sit so proud off the board that it was right up against the wall, I brought out the hot air rework station to solder the two directly to each other without the pin connection that I had originally designed it for.
 
