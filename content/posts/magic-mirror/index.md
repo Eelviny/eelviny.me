@@ -16,7 +16,7 @@ First off, we start with a plain and boring mirror. I live in a rental apartment
 
 ![The one photo](26e1a5.avif)
 
-Now I've done this before in my previous apartment, and I was able to find a grand total of one photo of it. Here I'm in the process of installing one light bar above and below the mirror, with an electrical box containining the power supply and other electronics. This meant that I could leave the mirror alone for the most part, but the box is ugly and my girlfriend complained about the direct light being too harsh. In this second iteration the aim is to have all the electronics completely hidden behind the mirror, and have the lights shine outwards from the sides. The main issue with this approach is the extremely limited space behind the mirror, meaning that any electronics I put there need to be very flat - 18mm tall maximum, from what I measured.
+Now I've done this before in my previous apartment, and I was able to find a grand total of one photo of it. Here I'm in the process of installing one light bar above and below the mirror, with an electrical box containing the power supply and other electronics. This meant that I could leave the mirror alone for the most part, but the box is ugly and my girlfriend complained about the direct light being too harsh. In this second iteration the aim is to have all the electronics completely hidden behind the mirror, and have the lights shine outwards from the sides. The main issue with this approach is the extremely limited space behind the mirror, meaning that any electronics I put there need to be very flat - 18mm tall maximum, from what I measured.
 
 ![An attempt at reuse](8596ca.avif)
 
