@@ -9,8 +9,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.17.1",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19"
